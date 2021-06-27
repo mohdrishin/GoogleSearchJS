@@ -52,3 +52,96 @@
 .active .mic{
     width: 50px;
 }
+
+
+
+
+/* media-queries starts here */
+
+@media screen and (max-width: 480px){
+
+#googleIcon{
+    width: 35px;
+    cursor: pointer;
+}
+#search-box{
+    padding: 18px;
+}
+.container input{
+    font-size: 15px;
+    background: transparent;
+    outline: none;
+    border: 0;
+    height: 40px;
+    /* width: 500px; This is the actual width */
+    width: 0px;
+    transition: 2s;
+}
+
+.active input{
+    width: 180px;
+    padding-left: 15px;
+} 
+.active .mic{
+    width: 35px;
+}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    #googleIcon{
+        width: 35px;
+        cursor: pointer;
+    }
+    #search-box{
+        padding: 18px;
+    }
+    .container input{
+        font-size: 15px;
+        background: transparent;
+        outline: none;
+        border: 0;
+        height: 40px;
+        /* width: 500px; This is the actual width */
+        width: 0px;
+        transition: 2s;
+    }
+    
+    .active input{
+        width: 250px;
+        padding-left: 15px;
+    } 
+    .active .mic{
+        width: 35px;
+    }
+
+}    
+
+@media screen and (min-width: 769px) and (max-width:1024px){
+    #googleIcon{
+        width: 45px;
+        cursor: pointer;
+    }
+    #search-box{
+        padding: 25px;
+    }
+    .container input{
+        font-size: 15px;
+        background: transparent;
+        outline: none;
+        border: 0;
+        height: 40px;
+        /* width: 500px; This is the actual width */
+        width: 0px;
+        transition: 2s;
+    }
+    
+    .active input{
+        width: 350px;
+        padding-left: 15px;
+    } 
+    .active .mic{
+        width: 45px;
+    }
+
+}
