@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
+:root{
+    --bg-color: azure;
+    --bg-transparent: transparent;
+}
+
 .container{
     height: 100vh;
-    background-color: azure;
+    background-color: var(--bg-color);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -36,7 +41,7 @@
 
 .container input{
     font-size: 20px;
-    background: transparent;
+    background: var(--bg-transparent);
     outline: none;
     border: 0;
     height: 50px;
