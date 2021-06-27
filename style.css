@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background-color: azure;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-box{
+    border-radius: 55px;
+    padding: 30px;
+    background: #f0f3ff;
+    display: flex;
+    align-items: center;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+}
+
+#googleIcon{
+    width: 50px;
+    cursor: pointer;
+}
+.mic{
+    /* width: 30px; */
+    width: 0px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.container input{
+    font-size: 20px;
+    background: transparent;
+    outline: none;
+    border: 0;
+    height: 50px;
+    /* width: 500px; This is the actual width */
+    width: 0px;
+    transition: 2s;
+}
+
+.active input{
+    width: 500px;
+    padding-left: 15px;
+} 
+.active .mic{
+    width: 50px;
+}
