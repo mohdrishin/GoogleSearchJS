@@ -3,19 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: var(--bg-color);
+}
 
 :root{
     --bg-color: azure;
     --bg-transparent: transparent;
 }
-
 .container{
-    height: 100vh;
-    background-color: var(--bg-color);
+    height: 90vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.darkmode{
+    height: 65px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+}
+.darkmode button{
+    height: 40px;
+    width: 90px;
+    margin-top:20px;
+    margin-right: 50px;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 2px solid #e8f4f5;
+    background-color: coral;
+
 }
 
 #search-box{
