@@ -10,12 +10,16 @@ googleIcon.onclick = function() {
 
 
 //darkmode function - myself tried - working
-var inbuilt = document.getElementById("darkmode");
+// var inbuilt = document.getElementById("darkmode");
 
-darkmode.onclick = function() {
-    darkModeOn.style.backgroundColor = "#000"; 
-    document.getElementById("darkmode").innerText = "Dark Mode OFF";
-}
+// darkmode.onclick = function() {
+//     darkModeOn.style.backgroundColor = "#000"; 
+//     document.getElementById("darkmode").innerText = "Dark Mode OFF";
+// }
+
+
 
 //darkmode second method
-
+darkmodeBtn.onclick = function() {
+    darkModeOn.classList.toggle("darkmode-color")
+}
